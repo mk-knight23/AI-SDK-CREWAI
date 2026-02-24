@@ -33,3 +33,22 @@ langchain_text_splitter_mock.CharacterTextSplitter = Mock
 # RetrievalQA needs to be a class with from_chain_type method
 mock_retrieval_qa_class = Mock()
 langchain_chains_mock.RetrievalQA = mock_retrieval_qa_class
+
+# Mock CrewAI modules
+crewai_mock = MagicMock()
+crewai_tools_mock = MagicMock()
+
+sys.modules['crewai'] = crewai_mock
+sys.modules['crewai_tools'] = crewai_tools_mock
+
+# Setup CrewAI mock classes
+crewai_mock.Agent = Mock
+crewai_mock.Crew = Mock
+crewai_mock.Task = Mock
+crewai_mock.Process = Mock
+crewai_mock.Process.sequential = "sequential"
+crewai_mock.Process.hierarchical = "hierarchical"
+
+# Mock tools
+crewai_tools_mock.SerperDevTool = Mock
+crewai_tools_mock.ScrapeWebsiteTool = Mock
