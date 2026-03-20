@@ -1,0 +1,13 @@
+{
+  "name": "AI-SDK-CREWAI",
+  "title": "CrewAI Role Fleet",
+  "description": "Role-based autonomous crews for delegated mission execution",
+  "topics": [
+    "crewai",
+    "role-based-agents",
+    "autonomy",
+    "task-delegation",
+    "python"
+  ],
+  "homepage": "https://mk-knight23.github.io/AI-SDK-CREWAI"
+}
