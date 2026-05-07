@@ -1,10 +1,12 @@
-# Project Brain: AI-SDK-CREWAI
+# Current Feature Inventory
 
-## Purpose
+## Repository
 
-Role-based autonomous crews for delegated mission execution.
+- Name: `AI-SDK-CREWAI`
+- SDK: CrewAI
+- Positioning: Role-based autonomous crews for delegated mission execution.
 
-## Current State
+## Implemented Today
 
 - Agents Army routing with skill-aware primary agent selection.
 - FastAPI service and local CLI entrypoint.
@@ -12,14 +14,14 @@ Role-based autonomous crews for delegated mission execution.
 - Docker packaging, CI workflow, and pytest contract tests.
 - Portfolio metadata, strategy notes, and skill matrix.
 
-## Upgrade Direction
+## Not Yet Implemented
 
 - Add specialized crew templates for engineering, security, and deployment missions.
 - Connect tool permissions and execution guardrails.
 - Persist task outputs and verification evidence.
 
-## Quality Bar
+## Verification Contract
 
-- Keep the repository runnable from a fresh clone.
-- Keep generated caches and local secrets out of git.
-- Keep README, skill matrix, tests, and CI aligned with actual behavior.
+- The local runner must complete without crashing when optional SDK credentials are missing.
+- The API contract must return routing and verification fields.
+- Tests must prove mission routing and a security-focused SENTINEL route.
